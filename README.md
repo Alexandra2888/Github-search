@@ -14,7 +14,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
     - [Built with](#built-with)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,15 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
+![alt text](image.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Alexandra2888/Github-search)
+- Live Site URL: (https://your-live-site-url.com)
 
 ## My process
 
@@ -51,9 +48,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-
-
-
 
 
 ## Author

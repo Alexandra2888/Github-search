@@ -10,6 +10,7 @@ module.exports = {
         "light-blue": "#0079FF",
         "text-primary": "#2B3442",
         "text-light": "#FFFFFF",
+        "text-gray":"#4B6A9B",
         "gray-blue": "#F2F2F2",
       },
       fontFamily: {
