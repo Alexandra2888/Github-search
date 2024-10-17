@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Provider } from "react-redux";
+import "./App.css";
+import Header from "./components/header/Header";
+import UserProfile from "./components/userProfile/UserProfile";
+import { DarkModeProvider, useDarkMode } from "./context/DarkModeContext";
+import store from "./store";
 
-function App() {
-  const [count, setCount] = useState(0)
+function AppContent() {
+  const { darkMode } = useDarkMode();
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={darkMode ? "dark" : ""}>
+      <div className="min-h-screen bg-background dark:bg-dark-bg text-text-primary dark:text-white transition-colors duration-300 p-6 font-mono">
+        <div className="max-w-xl mx-auto">
+          <Header />
+          <UserProfile/>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Provider store={store} >
+      <DarkModeProvider>
+        <AppContent />
+      </DarkModeProvider>
+    </Provider>
+  );
+}
+
+export default App;
