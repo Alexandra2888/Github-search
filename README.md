@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Alexandra2888/Github-search)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://github-search-28.netlify.app/)
 
 ## My process
 
